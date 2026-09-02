@@ -8,7 +8,7 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css?v=19">
+<link rel="stylesheet" href="styles.css?v=20">
 </head>
 <body data-en-title="Request - Damage Done Tattoo">
 
@@ -63,10 +63,18 @@
           style="margin-top: 2.5rem;">
 
       <!-- Versteckte FormSubmit-Optionen -->
-      <input type="hidden" name="_subject" value="Neue Tattoo-Anfrage - Damage Done Tattoo">
+      <input type="hidden" name="_subject" value="Neue Tattoo-Anfrage - Damage Done Tattoo"
+             data-en-value="New tattoo request - Damage Done Tattoo">
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_template" value="basic">
       <input type="hidden" name="_next" value="https://damagedone.de/thank-you.html">
+      <!-- Automatische Eingangsbestätigung an die anfragende Person.
+           FormSubmit verschickt diesen festen Text; die Angaben aus dem
+           Formular lassen sich darin leider nicht wiederholen. -->
+      <input type="hidden" name="_autoresponse"
+             value="Danke für deine Anfrage bei Damage Done Tattoo! Sie ist bei mir angekommen und ich melde mich zeitnah bei dir. Falls du nach einer Woche nichts gehört hast, frag gerne noch einmal nach - per Mail an tattoo@damagedone.de oder über Instagram. Bis bald, Emmely"
+             data-en-value="Thank you for your request at Damage Done Tattoo! It has reached me and I will get back to you shortly. If you have not heard from me after a week, feel free to follow up - by email at tattoo@damagedone.de or via Instagram. See you soon, Emmely">
+
       <!-- Honeypot gegen Spam-Bots: bleibt für Menschen unsichtbar -->
       <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off">
 
@@ -79,7 +87,7 @@
 
       <div class="field">
         <label for="email"><span data-en="Email">E-Mail</span> <span class="req">*</span></label>
-        <input type="email" id="email" name="E-Mail" required autocomplete="email">
+        <input type="email" id="email" name="email" required autocomplete="email">
       </div>
 
       <div class="field">
@@ -164,6 +172,6 @@
 
 </div>
 
-<script src="script.js?v=19"></script>
+<script src="script.js?v=20"></script>
 </body>
 </html>

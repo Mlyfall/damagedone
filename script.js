@@ -138,7 +138,7 @@
   var STORAGE_KEY = "ddt-lang";
   var currentLang = "de";
   var originals = new Map();          // merkt sich die deutschen Originaltexte
-  var ATTRS = ["alt", "aria-label", "placeholder"];
+  var ATTRS = ["alt", "aria-label", "placeholder", "value"];
 
   function applyLang(lang) {
     currentLang = (lang === "en") ? "en" : "de";
@@ -150,7 +150,7 @@
       el.innerHTML = (currentLang === "en") ? el.getAttribute("data-en") : originals.get(el);
     });
 
-    // a2) Attribute (alt, aria-label, placeholder)
+    // a2) Attribute (alt, aria-label, placeholder, value)
     ATTRS.forEach(function (attr) {
       document.querySelectorAll("[data-en-" + attr + "]").forEach(function (el) {
         // Deutschen Originalwert beim ersten Mal sichern

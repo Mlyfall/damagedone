@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anfrage - Damage Done Tattoo</title>
+<meta name="description" content="Tattoo-Anfrage an Damage Done Tattoo senden.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css?v=18">
+</head>
+<body data-en-title="Request - Damage Done Tattoo">
+
+<div class="page">
+
+  <header class="page-header">
+    <a class="brand" href="index.html">Damage Done Tattoo</a>
+    <nav class="page-nav" aria-label="Hauptnavigation">
+      <a class="nav-link" href="index.html#about" data-en="About">About</a>
+      <a class="nav-link" href="gallery.html" data-en="Gallery">Galerie</a>
+      <a class="nav-link" href="request.html" aria-current="page" data-en="Request">Anfrage</a>
+      <a class="nav-link" href="faq.html" data-en="FAQ">FAQ</a>
+
+      <div class="lang-toggle" role="group" aria-label="Sprache / Language">
+        <button type="button" data-set-lang="de" aria-pressed="true">DE</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="form-wrap">
+    <h1 class="page-title" data-en="Request">Anfrage</h1>
+    <p class="sub" data-en="Tattoo request">Tattoo-Anfrage</p>
+
+    <p class="intro" data-lang="de">Über dieses Formular kannst du mir eine Tattoo-Anfrage
+    stellen. Kein Problem, falls du beim genauen Motiv oder bei der Körperstelle noch unsicher
+    bist - in dem Fall melde ich mich bei dir und wir überlegen gemeinsam. Wenn du eine
+    allgemeine Frage hast, schreib mir gerne eine Mail an
+    <a href="mailto:tattoo@damagedone.de">tattoo@damagedone.de</a>.</p>
+    <p class="intro" data-lang="en" hidden>Use this form to send me a tattoo request. It is no
+    problem if you are not yet sure about the exact design or the placement - in that case I will
+    get in touch and we will figure it out together. For general questions, feel free to email me
+    at <a href="mailto:tattoo@damagedone.de">tattoo@damagedone.de</a>.</p>
+
+    <!-- =====================================================================
+         FORMSUBMIT-KONFIGURATION - VOR DEM LIVE-GANG ANPASSEN:
+
+         Empfänger und Weiterleitung sind eingetragen. OFFEN ist nur noch:
+         Das Formular nach dem Hochladen EINMAL selbst abschicken - FormSubmit
+         schickt daraufhin eine Bestätigungsmail an tattoo@damagedone.de.
+         Erst nach dem Klick auf den Link darin kommen Anfragen wirklich an.
+         Details: siehe README.md
+
+         Hinweis: die name="…"-Attribute der Felder sind bewusst immer deutsch -
+         sie werden zu den Beschriftungen in der E-Mail, die bei dir ankommt,
+         unabhängig davon, in welcher Sprache das Formular ausgefüllt wurde.
+         ===================================================================== -->
+    <form action="https://formsubmit.co/tattoo@damagedone.de"
+          method="POST"
+          enctype="multipart/form-data"
+          style="margin-top: 2.5rem;">
+
+      <!-- Versteckte FormSubmit-Optionen -->
+      <input type="hidden" name="_subject" value="Neue Tattoo-Anfrage - Damage Done Tattoo">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://damagedone.de/thank-you.html">
+      <!-- Honeypot gegen Spam-Bots: bleibt für Menschen unsichtbar -->
+      <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off">
+
+      <h2 class="sub" data-en="Contact">Kontakt</h2>
+
+      <div class="field">
+        <label for="name"><span data-en="Name">Name</span> <span class="req">*</span></label>
+        <input type="text" id="name" name="Name" required autocomplete="name">
+      </div>
+
+      <div class="field">
+        <label for="email"><span data-en="Email">E-Mail</span> <span class="req">*</span></label>
+        <input type="email" id="email" name="E-Mail" required autocomplete="email">
+      </div>
+
+      <div class="field">
+        <label for="city"><span data-en="City">Stadt</span> <span class="req">*</span></label>
+        <input type="text" id="city" name="Stadt" required autocomplete="address-level2">
+      </div>
+
+      <div class="field">
+        <label for="phone"><span data-en="Phone">Telefon</span> <span class="req">*</span></label>
+        <input type="tel" id="phone" name="Telefon" required autocomplete="tel">
+      </div>
+
+      <div class="field">
+        <label class="choice">
+          <input type="checkbox" name="Bereits tätowiert von mir" value="Ja">
+          <span data-en="I already have a tattoo done by you">Ich habe bereits ein Tattoo von dir</span>
+        </label>
+      </div>
+
+      <h2 class="sub" data-en="Your tattoo">Dein Tattoo</h2>
+
+      <!-- Einfachauswahl (Radio). Sollen mehrere Optionen gleichzeitig
+           wählbar sein: type="radio" durch type="checkbox" ersetzen und
+           name auf "Art des Tattoos[]" ändern. -->
+      <fieldset>
+        <legend class="fieldset-legend" data-en="Type of tattoo">Art des Tattoos</legend>
+        <div class="choices-row">
+          <label class="choice">
+            <input type="radio" name="Art des Tattoos" value="Wanna-do" checked>
+            <span>Wanna-do</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="Art des Tattoos" value="Wanna-do Re-Creation">
+            <span>Wanna-do Re-Creation</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="Art des Tattoos" value="Custom Tattoo">
+            <span>Custom Tattoo</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="description"><span data-en="Tattoo description">Beschreibung des Tattoos</span> <span class="req">*</span></label>
+        <textarea id="description" name="Beschreibung" required></textarea>
+      </div>
+
+      <div class="field">
+        <label for="placement"><span data-en="Placement">Körperstelle</span> <span class="req">*</span></label>
+        <input type="text" id="placement" name="Körperstelle" required
+               placeholder="z. B. linker Unterarm"
+               data-en-placeholder="e.g. left forearm">
+      </div>
+
+      <div class="field">
+        <label for="refs" data-en="Reference images">Referenzbilder</label>
+        <input type="file" id="refs" name="attachment" multiple accept="image/*">
+        <p class="hint" data-lang="de">Eigene Arbeiten, Flash-Sheets oder externe Referenzen.
+        Alle Dateien zusammen dürfen 10 MB nicht überschreiten.</p>
+        <p class="hint" data-lang="en" hidden>My own work, flash sheets or external references.
+        All files combined must stay under 10 MB.</p>
+      </div>
+
+      <div class="field">
+        <label for="note" data-en="Note (budget, other info)">Notiz (Budget, Verfügbarkeit, Sonstiges)</label>
+        <textarea id="note" name="Notiz"></textarea>
+      </div>
+
+      <button class="btn" type="submit" data-en="Send request">Anfrage senden</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <span data-en="Might be useful before you write:">Vor der Anfrage vielleicht hilfreich:</span>
+    <a href="faq.html" data-en="Read the FAQ">FAQ lesen</a>
+  </footer>
+
+  <nav class="legal-links" aria-label="Rechtliches">
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html" data-en="Privacy policy">Datenschutz</a>
+  </nav>
+
+</div>
+
+<script src="script.js?v=18"></script>
+</body>
+</html>

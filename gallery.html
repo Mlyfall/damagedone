@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galerie - Damage Done Tattoo</title>
+<meta name="description" content="Portfolio von Damage Done Tattoo.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css?v=18">
+</head>
+<body data-en-title="Gallery - Damage Done Tattoo">
+
+<div class="page">
+
+  <header class="page-header">
+    <a class="brand" href="index.html">Damage Done Tattoo</a>
+    <nav class="page-nav" aria-label="Hauptnavigation">
+      <a class="nav-link" href="index.html#about" data-en="About">About</a>
+      <a class="nav-link" href="gallery.html" aria-current="page" data-en="Gallery">Galerie</a>
+      <a class="nav-link" href="request.html" data-en="Request">Anfrage</a>
+      <a class="nav-link" href="faq.html" data-en="FAQ">FAQ</a>
+
+      <div class="lang-toggle" role="group" aria-label="Sprache / Language">
+        <button type="button" data-set-lang="de" aria-pressed="true">DE</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Überschrift bleibt für Screenreader und Suchmaschinen im Quelltext,
+         ist aber nicht sichtbar (sichtbar machen: class="page-title"). -->
+    <h1 class="visually-hidden" data-en="Gallery">Galerie</h1>
+
+
+    <!-- Das Raster wird aus gallery-data.js gefüllt. Bilder hinzufügen oder
+         entfernen: nur gallery-data.js bearbeiten (siehe README.md). -->
+    <div class="gallery-grid" id="gallery-grid" style="margin-top: 2rem;"></div>
+
+    <noscript>
+      <p>Bitte JavaScript aktivieren, um die Galerie zu sehen.</p>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <span>Damage Done Tattoo</span>
+    <a href="request.html" data-en="Request a tattoo">Tattoo anfragen</a>
+  </footer>
+
+  <nav class="legal-links" aria-label="Rechtliches">
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html" data-en="Privacy policy">Datenschutz</a>
+  </nav>
+
+</div>
+
+<!-- Lightbox (Vollbildansicht beim Klick auf ein Bild) -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildansicht">
+  <button class="lightbox-close" type="button" data-en="Close &times;">Schließen &times;</button>
+  <img id="lightbox-img" alt="">
+</div>
+
+<script src="gallery-data.js?v=18"></script>
+<script src="script.js?v=18"></script>
+</body>
+</html>

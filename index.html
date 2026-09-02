@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Damage Done Tattoo</title>
+<meta name="description" content="Damage Done Tattoo - Tattoo-Studio. Portfolio, Anfrage und FAQ.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css?v=18">
+</head>
+<body>
+
+<!-- =========================================================================
+     ZWEISPRACHIGKEIT (Deutsch ist Standard, Englisch per Umschalter)
+     Kurze Beschriftungen:  <a data-en="About">About</a>
+     Laengere Texte:        zwei Bloecke nebeneinander -
+                            <p data-lang="de">…</p><p data-lang="en">…</p>
+     Details siehe README.md, Abschnitt "Zweisprachigkeit".
+     ========================================================================= -->
+
+<div class="split">
+
+  <!-- ===== Linke Spalte: fixiert, Titel links, Links in den vier Ecken ===== -->
+  <aside class="pane-left">
+
+    <nav class="corners" aria-label="Hauptnavigation oben">
+      <a class="nav-link" href="#about" data-scroll-target="about" data-en="About">About</a>
+
+      <!-- Sprachumschalter -->
+      <div class="lang-toggle" role="group" aria-label="Sprache / Language">
+        <button type="button" data-set-lang="de" aria-pressed="true">DE</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <a class="nav-link" href="gallery.html" data-en="Gallery">Galerie</a>
+    </nav>
+
+    <hr class="rule">
+
+    <div class="title-block">
+      <h1 class="site-title">
+        <span>Damage</span>
+        <span>Done</span>
+        <span>Tattoo</span>
+      </h1>
+    </div>
+
+    <hr class="rule">
+
+    <nav class="corners" aria-label="Hauptnavigation unten">
+      <a class="nav-link" href="request.html" data-en="Request">Anfrage</a>
+
+      <a class="social" href="https://www.instagram.com/damagedonetattoo/"
+         target="_blank" rel="noopener"
+         aria-label="Instagram" data-en-aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="19" height="19" fill="none"
+             stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4.2"/>
+          <circle cx="17.3" cy="6.7" r="1.05" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+
+      <a class="nav-link" href="faq.html" data-en="FAQ">FAQ</a>
+    </nav>
+
+  </aside>
+
+  <!-- ===== Rechte Spalte: scrollbar - Galerie-Vorschau, dann About ===== -->
+  <main class="pane-right" id="scroll-pane">
+
+    <section aria-label="Ausgewählte Arbeiten" data-en-aria-label="Selected work">
+      <!-- Wird aus gallery-data.js gefüllt: alle Einträge mit  home: true.
+           Bilder tauschen: siehe README.md -->
+      <div class="preview-list" id="preview-list"></div>
+
+      <noscript>
+        <p>Bitte JavaScript aktivieren, um die Bildvorschau zu sehen -
+           das vollständige Portfolio gibt es unter <a href="gallery.html">Galerie</a>.</p>
+      </noscript>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <h2 class="sub" id="about-heading" data-en="About">About</h2>
+
+      <div class="about-grid">
+
+        <div class="about-text">
+          <h3 data-en="Hi, I&#39;m Emmely.">Hi, ich bin Emmely.</h3>
+
+          <div data-lang="de">
+            <p>Ich bin 29, lebe in Leipzig und tätowiere seit 2018. Angefangen habe ich damals
+            ohne Maschine. Obwohl Handpoke eine langwierige Technik ist, oder vielleicht gerade
+            deshalb, habe ich sie für mich lieben gelernt und schätze die Ergebnisse bis heute
+            sehr.</p>
+
+            <p>In letzter Zeit zieht es mich immer stärker zu großen, dunklen, geometrischen
+            Motiven, und dafür greife ich inzwischen öfter zur Maschine.</p>
+
+            <p>Meine ersten Tattoos sind bei mir zu Hause entstanden. Nach einer Zwischenstation
+            tätowiere ich seit Anfang 2025 in meinem eigenen kleinen Studio im Leipziger Westen -
+            ein Schritt, über den ich mich immer noch sehr freue.</p>
+
+            <p>Hauptberuflich arbeite ich Vollzeit in der IT-Security. Das Tätowieren ist mein
+            kreativer Ausgleich dazu, und ich bin sehr dankbar, dass ich mir diesen Teil erhalten
+            konnte (und anders kann ich es mir gar nicht mehr vorstellen).</p>
+          </div>
+
+          <!-- Englische Fassung - bei Änderungen am deutschen Text bitte mit anpassen. -->
+          <div data-lang="en" hidden>
+            <p>I'm 29, I live in Leipzig and I have been tattooing since 2018. Back then I
+            started out without a machine. Handpoke is a slow technique - or maybe that is
+            exactly why I came to love it, and I still value the results it gives.</p>
+
+            <p>Lately I have been drawn more and more to large, dark, geometric work, and for
+            that I increasingly reach for the machine.</p>
+
+            <p>My first tattoos were made at home. After one stop in between, I have been
+            tattooing in my own small studio in the west of Leipzig since the beginning of 2025 -
+            a step I am still very happy about.</p>
+
+            <p>My day job is full time in IT security. Tattooing is my creative counterweight to
+            that, and I am very grateful that I have been able to keep this part of my life (and I
+            couldn't imagine it any other way now).</p>
+          </div>
+        </div>
+
+        <img class="about-photo" src="images/portrait.jpg"
+             alt="Porträt von Damage Done Tattoo"
+             data-en-alt="Portrait of Damage Done Tattoo"
+             width="896" height="1400" loading="lazy">
+
+      </div>
+      <nav class="legal-links" aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html" data-en="Privacy policy">Datenschutz</a>
+      </nav>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="gallery-data.js?v=18"></script>
+<script src="script.js?v=18"></script>
+</body>
+</html>

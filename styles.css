@@ -391,6 +391,20 @@ a:hover, a:focus-visible { color: var(--text); border-bottom-color: var(--accent
 .legal-links a:hover, .legal-links a:focus-visible { color: var(--accent); border-bottom: none; }
 .legal-links a[aria-current="page"] { color: var(--text); }
 
+/* Startseite: die Rechtslinks bilden unten in der Scrollspalte denselben
+   Streifen wie die Eck-Links links - Hoehe plus die 1px-Linie selbst, und
+   der negative Abstand hebt die Polsterung der Spalte auf. Dadurch liegt
+   ihre Linie beim Scrollen ganz nach unten exakt auf der linken Linie. */
+@media (min-width: 901px) {
+  .pane-right .legal-links {
+    min-height: calc(var(--strip) + 1px);
+    align-items: center;
+    margin-top: calc(var(--pad) * 1.2);
+    padding-top: 0;
+    margin-bottom: calc(var(--pad) * -1);
+  }
+}
+
 /* Folgen die Rechtslinks direkt auf den Fussbereich, teilen sie sich dessen
    Trennlinie - sonst staenden zwei Linien kurz untereinander. */
 .site-footer + .legal-links {

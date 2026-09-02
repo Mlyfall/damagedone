@@ -621,6 +621,9 @@ fieldset { border: 0; padding: 0; margin: 0 0 1.6rem; }
 .choice:hover span { color: var(--accent); }
 
 .hint { font-size: 0.78rem; color: var(--text-dim); margin: 0.5rem 0 0; }
+/* Erklaerung ueber den Auswahlfeldern: steht darueber statt darunter */
+.choices-hint { margin: 0 0 0.9rem; max-width: 36rem; line-height: 1.6; }
+.choices-hint b { color: var(--text); font-weight: 400; }
 
 .btn {
   display: inline-block;

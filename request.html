@@ -8,7 +8,7 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css?v=20">
+<link rel="stylesheet" href="styles.css?v=21">
 </head>
 <body data-en-title="Request - Damage Done Tattoo">
 
@@ -114,18 +114,30 @@
            name auf "Art des Tattoos[]" ändern. -->
       <fieldset>
         <legend class="fieldset-legend" data-en="Type of tattoo">Art des Tattoos</legend>
+
+        <p class="hint choices-hint" data-lang="de"><b>Wannados</b> sind fertige Motive von mir -
+        Motive, die ich stechen möchte und dafür auf Instagram veröffentliche.
+        <b>Wannado-Variation</b> passt, wenn dir ein bereits gestochenes Motiv gefällt und du
+        etwas Ähnliches möchtest; ich zeichne es dann neu für dich. <b>Custom</b> sind deine
+        eigenen Ideen oder externe Inspirationen, die du von mir umgesetzt haben möchtest.</p>
+        <p class="hint choices-hint" data-lang="en" hidden><b>Wannados</b> are finished designs of
+        mine - pieces I want to tattoo and post on Instagram. <b>Wannado variation</b> fits if you
+        like a design I have already tattooed and would like something similar; I then draw it
+        anew for you. <b>Custom</b> means your own ideas or outside inspiration that you would
+        like me to realise.</p>
+
         <div class="choices-row">
           <label class="choice">
-            <input type="radio" name="Art des Tattoos" value="Wanna-do" checked>
-            <span>Wanna-do</span>
+            <input type="radio" name="Art des Tattoos" value="Wannado" checked>
+            <span>Wannado</span>
           </label>
           <label class="choice">
-            <input type="radio" name="Art des Tattoos" value="Wanna-do Re-Creation">
-            <span>Wanna-do Re-Creation</span>
+            <input type="radio" name="Art des Tattoos" value="Wannado-Variation">
+            <span>Wannado-Variation</span>
           </label>
           <label class="choice">
-            <input type="radio" name="Art des Tattoos" value="Custom Tattoo">
-            <span>Custom Tattoo</span>
+            <input type="radio" name="Art des Tattoos" value="Custom">
+            <span>Custom</span>
           </label>
         </div>
       </fieldset>
@@ -172,6 +184,6 @@
 
 </div>
 
-<script src="script.js?v=20"></script>
+<script src="script.js?v=21"></script>
 </body>
 </html>

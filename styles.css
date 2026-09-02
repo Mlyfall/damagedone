@@ -390,6 +390,8 @@ a:hover, a:focus-visible { color: var(--text); border-bottom-color: var(--accent
 .legal-links a { color: var(--text-dim); border-bottom: none; }
 .legal-links a:hover, .legal-links a:focus-visible { color: var(--accent); border-bottom: none; }
 .legal-links a[aria-current="page"] { color: var(--text); }
+/* Das Instagram-Symbol steht in derselben Zeile wie die Rechtslinks */
+.legal-links .social { align-self: center; }
 
 /* Startseite: die Rechtslinks bilden unten in der Scrollspalte denselben
    Streifen wie die Eck-Links links - Hoehe plus die 1px-Linie selbst, und

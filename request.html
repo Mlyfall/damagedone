@@ -8,7 +8,7 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css?v=24">
+<link rel="stylesheet" href="styles.css?v=25">
 </head>
 <body data-en-title="Request - Damage Done Tattoo">
 
@@ -47,17 +47,20 @@
     <!-- =====================================================================
          FORMSUBMIT-KONFIGURATION - VOR DEM LIVE-GANG ANPASSEN:
 
-         Empfänger und Weiterleitung sind eingetragen. OFFEN ist nur noch:
-         Das Formular nach dem Hochladen EINMAL selbst abschicken - FormSubmit
-         schickt daraufhin eine Bestätigungsmail an tattoo@damagedone.de.
-         Erst nach dem Klick auf den Link darin kommen Anfragen wirklich an.
+         Das Formular ist freigeschaltet und laeuft.
+
+         Die action-URL enthaelt bewusst NICHT die E-Mail-Adresse, sondern den
+         zufaelligen Token, den FormSubmit in der Bestaetigungsmail nennt. So
+         steht die Adresse nicht im Quelltext, wo Spam-Bots sie einsammeln
+         koennten. Der Token gehoert zu tattoo@damagedone.de; dorthin werden
+         die Anfragen zugestellt.
          Details: siehe README.md
 
          Hinweis: die name="…"-Attribute der Felder sind bewusst immer deutsch -
          sie werden zu den Beschriftungen in der E-Mail, die bei dir ankommt,
          unabhängig davon, in welcher Sprache das Formular ausgefüllt wurde.
          ===================================================================== -->
-    <form action="https://formsubmit.co/tattoo@damagedone.de"
+    <form action="https://formsubmit.co/d0e333a30fed21ff0462cbe116b7d3b6"
           method="POST"
           enctype="multipart/form-data"
           style="margin-top: 2.5rem;">
@@ -194,6 +197,6 @@
 
 </div>
 
-<script src="script.js?v=24"></script>
+<script src="script.js?v=25"></script>
 </body>
 </html>
